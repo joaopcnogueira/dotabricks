@@ -62,4 +62,9 @@ def get_new_pro_matches(**kwargs):
 
 # COMMAND ----------
 
-get_new_pro_matches()
+mode = dbutils.widgets.get("mode")
+
+if mode == "new":
+    get_new_pro_matches()
+elif mode == "history":
+    get_history_pro_matches()

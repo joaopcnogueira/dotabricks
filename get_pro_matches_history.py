@@ -62,8 +62,4 @@ def get_new_pro_matches(**kwargs):
 
 # COMMAND ----------
 
-get_history_pro_matches()
-
-# COMMAND ----------
-
 get_new_pro_matches()
